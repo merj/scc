@@ -1,0 +1,22 @@
+A sign/countersign contract client and server implementation and its supporting toolchain, intended primarily for software licencing.
+
+Technical Details
+
+Contracts are generated and securely signed locally, then remotely countersigned using public-key cryptography (ECDSA) over HTTP/HTTPS.
+
+Exit Codes
+
+Unless otherwise stated commands returns 0 on success, 1 on usage error, 2 on authorization error and 3+ for any other error.
+
+Unexpected errors may produce unexpected output.
+
+Glossary
+
+hf      hash file
+gkp     generate key pair
+sf      sign file
+vf      verify file
+gc      generate contract
+pc      print contract
+scc     sign/countersign contract
+sccd    sign/countersign contract daemon
